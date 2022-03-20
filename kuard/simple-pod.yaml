@@ -1,0 +1,9 @@
+apiversion: v1
+kind: Pod
+metadata:
+  name: math-pod
+spec:
+  containers:
+    - image: ubuntu
+      name: math-add
+      command: ['expr', '3', '+', '2']
