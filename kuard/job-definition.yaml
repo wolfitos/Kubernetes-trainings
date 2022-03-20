@@ -1,7 +1,7 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name:math-add-job
+  name: math-add-job
 spec:
   template:
     spec:
