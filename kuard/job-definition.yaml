@@ -1,0 +1,12 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name:math-add-job
+spec:
+  template:
+    spec:
+      containers:
+        - image: ubuntu
+          name: math-job
+          command: ['expr', '3', '+', '2']
+      restartPolicy: Never
