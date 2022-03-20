@@ -4,6 +4,7 @@ metadata:
   name: math-add-job
 spec:
   completions: 3
+  parallelism: 3
   template:
     spec:
       containers:
